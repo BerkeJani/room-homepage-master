@@ -56,6 +56,10 @@ body {
     display: none;
 }
 
+#close-icon{
+    display: none;
+}
+
 .responsive #close-icon {
     display: none;
     color: var(--White);
