@@ -60,15 +60,6 @@ body {
     display: none;
 }
 
-.responsive #close-icon {
-    display: none;
-    color: var(--White);
-}
-
-.responsive #company-logo {
-    display: none;
-}
-
 .navbar-item:hover {
     text-decoration: underline;
     text-underline-offset: 12px;
@@ -130,6 +121,7 @@ body {
     position: absolute;
     bottom: 0;
     right: -135px;
+    z-index: 99;
 }
 
 .modal-button {
