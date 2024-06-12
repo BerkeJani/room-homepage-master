@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+}
+
+body {
+    background-color: var(--White);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan';
+    margin: 0;
+}
+
+.main-content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.modal-image {
+    background-image: url('./images/desktop-image-hero-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: aqua;
+    height: 65vh;
+    width: 60%;
+}
+
+.navbar {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    color: var(--White);
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+.navbar-company {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.introduction-wrapper {
+    width: 40%;
+    height: 65vh;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+    height: 100%;
+
+}
+
+.introduction-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.introduction-text {
+    line-height: 1.5;
+    font-size: 1rem;
+    color: var(--DarkGray);
+}
+
+.introduction-link-shop {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--DarkGray);
+    text-decoration: none;
+    letter-spacing: .8rem;
+    margin-top: 1rem;
+}
+
+.introduction-link-shop:hover {
+    cursor: pointer;
+}
+
+.introduction-modal-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-button {
+    background-color: var(--Black);
+    color: var(--White);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border: 0;
+}
+
+
+.modal-button img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.modal-button:hover {
+    cursor: pointer;
+    background-color: var(--VeryDarkGray);
+}
+
+.about-leftImage {
+    width: 30%;
+    height: 35vh;
+    background-image: url('./images/image-about-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.about {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-title {
+    color: var(--Black);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+
+}
+
+.about-text {
+    color: var(--DarkGray);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.about-rightImage {
+    width: 30%;
+    height: 35vh;
+    background-image: url('./images/image-about-light.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.attribution {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: .8rem;
+}
